@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+#root {
+  background-color: #d3d3d3;
+  color: #000000;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.row.d-flex.align-items-center > div:last-child {
+  text-align: end;
+}
+.row.d-flex.align-items-center > div {
+  text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    display: block;
+    padding: 0;
+  }
+  #root {
+    padding: 2rem 0;
+  }
+  .row.d-flex.align-items-center > div:last-child {
+    text-align: center;
+  }
+  .row.d-flex.align-items-center > div:last-child button{
+    width: 100%;
+  }
+  input {
+    width: 80%;
+  }
+  .css-1eg20ca-MuiResponsiveChart-container {
+    width: 100% !important;
+  }
+}
