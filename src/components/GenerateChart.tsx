@@ -49,7 +49,6 @@ const GenerateChart: React.FC<GenerateChartProps> = ({ data }) => {
                     valueFormatter: (value) => (value == null ? 'NaN' : value.toString())
                 },
             ]}
-            width={700}
             height={300}
             margin={{ left: 65, right: 10 }}
             grid={{ vertical: true, horizontal: true }}
@@ -67,7 +66,6 @@ const GenerateChart: React.FC<GenerateChartProps> = ({ data }) => {
                 label: "Distance (KM)",
                 data: seriesDistanceDiff
             }]}
-            width={700}
             height={300}
             margin={{ left: 65, right: 10 }}
             barLabel="value"
